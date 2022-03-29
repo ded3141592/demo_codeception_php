@@ -1,0 +1,18 @@
+{
+    "require-dev": {
+        "codeception/codeception": "^4.1",
+        "codeception/module-phpbrowser": "^1.0.0",
+        "codeception/module-asserts": "^1.0.0",
+        "codeception/module-webdriver": "^1.0.0",
+        "ext-imagick": "*",
+        "codeception/visualception": "*"
+    },
+    "require": {
+        "codeception/module-webdriver": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "app\\": "app/"
+        }
+    }
+}

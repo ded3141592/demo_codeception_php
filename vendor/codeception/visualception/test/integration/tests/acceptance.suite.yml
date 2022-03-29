@@ -1,0 +1,24 @@
+class_name: WebGuy
+modules:
+    enabled:
+        - WebDriver
+        - VisualCeption
+    config:
+        WebDriver:
+            url: http://httpserver:8080
+            browser: phantomjs
+            capabilities:
+                webStorageEnabled: true
+        VisualCeption:
+            maximumDeviation: 0
+            saveCurrentImageIfFailure: true
+            report: true
+
+env:
+    phantom:
+        modules:
+            config:
+                WebDriver:
+                    browser: phantomjs
+                    host: localhost
+                    port: 4444

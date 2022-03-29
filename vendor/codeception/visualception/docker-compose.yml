@@ -1,0 +1,29 @@
+version: '3'
+
+services:
+  php:
+    build:
+      context: ./docker
+      dockerfile: php.docker
+    command: bash -c 'cd /project && composer install && php vendor/bin/codecept build -c test/integration/ && php vendor/bin/codecept run -c test/integration/ && vendor/bin/phpunit test/unit/'
+    volumes:
+      - ./:/project
+    depends_on:
+      - phantomjs
+      - httpserver
+    network_mode: host
+  phantomjs:
+    build:
+      context: ./docker
+      dockerfile: phantomjs.docker
+    command: bash -c 'phantomjs --webdriver=4444 --ignore-ssl-errors=true'
+    ports:
+      - '4444:4444'
+  httpserver:
+    build:
+      context: ./docker
+      dockerfile: httpServer.docker
+    volumes:
+      - ./test/integration/html:/public
+    ports:
+      - '8080:8080'
