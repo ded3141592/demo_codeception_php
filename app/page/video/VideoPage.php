@@ -8,5 +8,5 @@ class VideoPage
     public static $searchButton = "button[type='submit']";
     public static $firstVideo = ".serp-item:nth-child(1) .thumb-image__preview";
     public static $fadeSpinner = ".fade_progress_yes";
-    public static $firstAvatar = ".serp-item:nth-child(1) img";
+
 }

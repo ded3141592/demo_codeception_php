@@ -28,13 +28,12 @@ class DemoCest
         sleep(2);
         $actualClassOnHover = $I->grabAttributeFrom($videoPage::$firstVideo, 'class');
         $I->makeElementScreenshot($videoPage::$firstVideo, "second");
-        $firstScreen = new Imagick(getcwd()."\\tests\\_output\\debug\\first.png");
-        $secondScreen = new Imagick(getcwd()."\\tests\\_output\\debug\\second.png");
+        $firstScreen = new Imagick(getcwd() . "\\tests\\_output\\debug\\first.png");
+        $secondScreen = new Imagick(getcwd() . "\\tests\\_output\\debug\\second.png");
         $compareImagesResult = $firstScreen->compareImages($secondScreen, 1);
 
         assertStringContainsString($expectedClassOnHover, $actualClassOnHover);
         assertNotEquals(0, $compareImagesResult[1]);
-
 
     }
 
