@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "332a6c04e39bdcc636337011c32332f9",
+    "content-hash": "aaff799cdb1e73d1ec12f4bd09ffc23e",
     "packages": [
         {
             "name": "behat/gherkin",
@@ -4247,46 +4247,6 @@
                 "source": "https://github.com/Codeception/module-phpbrowser/tree/1.0.2"
             },
             "time": "2020-10-24T15:29:28+00:00"
-        },
-        {
-            "name": "codeception/visualception",
-            "version": "1.0.3",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Codeception/VisualCeption.git",
-                "reference": "b342e9ff9d239a0e7e524f653fd5276099b9b04f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/VisualCeption/zipball/b342e9ff9d239a0e7e524f653fd5276099b9b04f",
-                "reference": "b342e9ff9d239a0e7e524f653fd5276099b9b04f",
-                "shasum": ""
-            },
-            "require": {
-                "ext-imagick": "*",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "codeception/codeception": "2.5.6",
-                "phpunit/phpunit": "6.5.14"
-            },
-            "type": "library",
-            "autoload": {
-                "classmap": [
-                    "module/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "description": "Visual regression tests for Codeception",
-            "homepage": "https://github.com/Codeception/VisualCeption",
-            "support": {
-                "issues": "https://github.com/Codeception/VisualCeption/issues",
-                "source": "https://github.com/Codeception/VisualCeption/tree/1.0.3"
-            },
-            "time": "2021-01-27T07:58:05+00:00"
         },
         {
             "name": "guzzlehttp/guzzle",

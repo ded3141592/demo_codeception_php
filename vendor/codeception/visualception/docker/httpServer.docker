@@ -1,8 +1,0 @@
-FROM node:alpine
-
-RUN npm i http-server -g
-
-RUN mkdir /public
-WORKDIR /public
-
-CMD [ "http-server" ]

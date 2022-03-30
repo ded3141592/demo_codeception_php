@@ -563,49 +563,6 @@
             "install-path": "../codeception/stub"
         },
         {
-            "name": "codeception/visualception",
-            "version": "1.0.3",
-            "version_normalized": "1.0.3.0",
-            "source": {
-                "type": "git",
-                "url": "https://github.com/Codeception/VisualCeption.git",
-                "reference": "b342e9ff9d239a0e7e524f653fd5276099b9b04f"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://api.github.com/repos/Codeception/VisualCeption/zipball/b342e9ff9d239a0e7e524f653fd5276099b9b04f",
-                "reference": "b342e9ff9d239a0e7e524f653fd5276099b9b04f",
-                "shasum": ""
-            },
-            "require": {
-                "ext-imagick": "*",
-                "php": ">=5.4.0"
-            },
-            "require-dev": {
-                "codeception/codeception": "2.5.6",
-                "phpunit/phpunit": "6.5.14"
-            },
-            "time": "2021-01-27T07:58:05+00:00",
-            "type": "library",
-            "installation-source": "dist",
-            "autoload": {
-                "classmap": [
-                    "module/"
-                ]
-            },
-            "notification-url": "https://packagist.org/downloads/",
-            "license": [
-                "Apache-2.0"
-            ],
-            "description": "Visual regression tests for Codeception",
-            "homepage": "https://github.com/Codeception/VisualCeption",
-            "support": {
-                "issues": "https://github.com/Codeception/VisualCeption/issues",
-                "source": "https://github.com/Codeception/VisualCeption/tree/1.0.3"
-            },
-            "install-path": "../codeception/visualception"
-        },
-        {
             "name": "doctrine/instantiator",
             "version": "1.4.1",
             "version_normalized": "1.4.1.0",
@@ -4906,7 +4863,6 @@
         "codeception/lib-innerbrowser",
         "codeception/module-asserts",
         "codeception/module-phpbrowser",
-        "codeception/visualception",
         "guzzlehttp/guzzle",
         "guzzlehttp/promises",
         "psr/http-client",
