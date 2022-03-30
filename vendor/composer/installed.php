@@ -1,22 +1,22 @@
 <?php return array(
     'root' => array(
-        'pretty_version' => '1.0.0+no-version-set',
-        'version' => '1.0.0.0',
+        'pretty_version' => 'dev-main',
+        'version' => 'dev-main',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
-        'reference' => NULL,
+        'reference' => '9e540df26fbf5cb7c525ce18600ba4231655411c',
         'name' => '__root__',
         'dev' => true,
     ),
     'versions' => array(
         '__root__' => array(
-            'pretty_version' => '1.0.0+no-version-set',
-            'version' => '1.0.0.0',
+            'pretty_version' => 'dev-main',
+            'version' => 'dev-main',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),
-            'reference' => NULL,
+            'reference' => '9e540df26fbf5cb7c525ce18600ba4231655411c',
             'dev_requirement' => false,
         ),
         'behat/gherkin' => array(
@@ -99,15 +99,6 @@
             'aliases' => array(),
             'reference' => '18a148dacd293fc7b044042f5aa63a82b08bff5d',
             'dev_requirement' => false,
-        ),
-        'codeception/visualception' => array(
-            'pretty_version' => '1.0.3',
-            'version' => '1.0.3.0',
-            'type' => 'library',
-            'install_path' => __DIR__ . '/../codeception/visualception',
-            'aliases' => array(),
-            'reference' => 'b342e9ff9d239a0e7e524f653fd5276099b9b04f',
-            'dev_requirement' => true,
         ),
         'doctrine/instantiator' => array(
             'pretty_version' => '1.4.1',

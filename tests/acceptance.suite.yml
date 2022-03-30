@@ -15,7 +15,3 @@ modules:
             chromeOptions:
               args: ["--disable-gpu"]
         wait: 5
-    - VisualCeption:
-        maximumDeviation: 0                                   # deviation in percent
-        saveCurrentImageIfFailure: true                       # if true, VisualCeption saves the current
-        fullScreenShot: true

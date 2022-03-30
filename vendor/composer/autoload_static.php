@@ -29,10 +29,6 @@ class ComposerStaticInit057850562aef3fa0a8ceb3e1a97a7aaa
         array (
             'phpDocumentor\\Reflection\\' => 25,
         ),
-        'a' => 
-        array (
-            'app\\' => 4,
-        ),
         'W' => 
         array (
             'Webmozart\\Assert\\' => 17,
@@ -95,10 +91,6 @@ class ComposerStaticInit057850562aef3fa0a8ceb3e1a97a7aaa
             0 => __DIR__ . '/..' . '/phpdocumentor/reflection-common/src',
             1 => __DIR__ . '/..' . '/phpdocumentor/reflection-docblock/src',
             2 => __DIR__ . '/..' . '/phpdocumentor/type-resolver/src',
-        ),
-        'app\\' => 
-        array (
-            0 => __DIR__ . '/../..' . '/app',
         ),
         'Webmozart\\Assert\\' => 
         array (
@@ -257,10 +249,7 @@ class ComposerStaticInit057850562aef3fa0a8ceb3e1a97a7aaa
         'Codeception\\Lib\\Interfaces\\SessionSnapshot' => __DIR__ . '/..' . '/codeception/module-webdriver/src/Codeception/Lib/Interfaces/SessionSnapshot.php',
         'Codeception\\Module\\AbstractAsserts' => __DIR__ . '/..' . '/codeception/module-asserts/src/Codeception/Module/AbstractAsserts.php',
         'Codeception\\Module\\Asserts' => __DIR__ . '/..' . '/codeception/module-asserts/src/Codeception/Module/Asserts.php',
-        'Codeception\\Module\\ImageDeviationException' => __DIR__ . '/..' . '/codeception/visualception/module/ImageDeviationException.php',
         'Codeception\\Module\\PhpBrowser' => __DIR__ . '/..' . '/codeception/module-phpbrowser/src/Codeception/Module/PhpBrowser.php',
-        'Codeception\\Module\\VisualCeption' => __DIR__ . '/..' . '/codeception/visualception/module/VisualCeption.php',
-        'Codeception\\Module\\VisualCeption\\Utils' => __DIR__ . '/..' . '/codeception/visualception/module/Utils.php',
         'Codeception\\Module\\WebDriver' => __DIR__ . '/..' . '/codeception/module-webdriver/src/Codeception/Module/WebDriver.php',
         'Codeception\\Util\\HttpCode' => __DIR__ . '/..' . '/codeception/lib-innerbrowser/src/Codeception/Util/HttpCode.php',
         'Codeception\\Util\\Shared\\Asserts' => __DIR__ . '/..' . '/codeception/lib-asserts/src/Codeception/Util/Shared/Asserts.php',
