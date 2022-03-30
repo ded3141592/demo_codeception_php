@@ -4,5 +4,7 @@ protected/runtime/*
 !protected/runtime/.gitignore
 protected/data/*.db
 themes/classic/views/
-*.png
-*.html
+
+tests/_output
+.idea
+vendor
