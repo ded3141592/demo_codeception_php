@@ -15,7 +15,7 @@
  * @method void pause()
  *
  * @SuppressWarnings(PHPMD)
-*/
+ */
 class AcceptanceTester extends \Codeception\Actor
 {
     use _generated\AcceptanceTesterActions;
@@ -23,4 +23,26 @@ class AcceptanceTester extends \Codeception\Actor
     /**
      * Define custom actions here
      */
+
+    public function compareImages(string $firstImage, string $secondImage): int
+    {
+        $firstScreen = new Imagick(getcwd() . "\\tests\\_output\\debug\\" . $firstImage . ".png");
+        $secondScreen = new Imagick(getcwd() . "\\tests\\_output\\debug\\" . $secondImage . ".png");
+        return $firstScreen->compareImages($secondScreen, 1)[1];
+    }
+
+    public function waitForElementDisplayingChanged(string $referenceImageName, string $locator, int $timeout = 10): bool
+    {
+        for ($i = 0; $i < $timeout; $i++) {
+            $actualScreenshotName = str_replace(' ', '', microtime());
+            $this->makeElementScreenshot($locator, $actualScreenshotName);
+            $compareResult = $this->compareImages($referenceImageName, $actualScreenshotName);
+            if ($compareResult > 0) {
+                return true;
+            }
+            sleep(1);
+        }
+        return false;
+    }
+
 }

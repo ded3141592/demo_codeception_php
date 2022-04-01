@@ -13,5 +13,6 @@ modules:
         browser: chrome #firefox
           capabilities:
             chromeOptions:
-              args: ["--disable-gpu"]
+              args: [ "--disable-gpu" ]
         wait: 5
+    - Asserts
